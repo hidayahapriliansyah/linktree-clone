@@ -11,8 +11,7 @@
 
 body {
   background-image: url(assets/salju.jpg);
-  background-repeat: repeat-y;
-  background-size: contain;
+  background-size: auto;
 }
 
 main {
