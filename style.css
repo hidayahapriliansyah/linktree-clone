@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  color: black;
+  text-decoration: none;
+}
+
+body {
+  background-image: url(assets/salju.jpg);
+  background-repeat: repeat-y;
+  background-size: contain;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  height: 100vh;
+  backdrop-filter: blur(10px);
+  background-color: rgba(15, 23, 42, 0.8);
+  padding: 32px;
+}
+
+
+img {
+  width: 32px;
+  height: 32px;
+}
+
+img.profile {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 120px;
+  height: 120px;
+  border-radius: 100%;
+  margin-bottom: 16px;
+}
+
+section {
+  max-width: 560px;
+}
+
+section.header {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+section.header h1 {
+  text-align: center;
+  color: whitesmoke;
+  font-size: 18px;
+}
+
+section.header p {
+  text-align: center;
+  color: whitesmoke;
+  font-size: 14px;
+}
+
+section.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 16px;
+
+  margin-top: 32px;
+  width: 100%;
+}
+
+section.card a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+
+  filter: grayscale(100%);
+  padding: 8px;
+  border: gray solid 1px;
+  border-radius: 10px;
+  font-weight: 500;
+  background-color: #FDFDFD;
+  transition: all;
+  transition-duration: 150ms;
+}
+
+section.card a:hover {
+  transform: translateY(4px);
+  font-weight: 600;
+  filter: grayscale(0%);
+  background-color: whitesmoke;
+  border: black solid 1px;
+  box-shadow: 0 4px 6px -1px rgb(245 245 245 / 0.1), 0 2px 4px -2px rgb(245 245 245 / 0.1);
+}
+
+section.card a span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+span.closing {
+  margin-top: 32px;
+  font-size: 12px;
+  color: whitesmoke;
+}
